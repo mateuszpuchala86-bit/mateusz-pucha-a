@@ -1,0 +1,1196 @@
+<!DOCTYPE html>
+<html lang="pl">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Mateusz [Nazwisko] — Strony internetowe dla lokalnych firm | Świętokrzyskie</title>
+<meta name="description" content="Tworzę strony internetowe dla małych firm w woj. świętokrzyskim — mechaników, fryzjerek, fizjoterapeutów, gabinetów. Szybko, w przejrzystej cenie, bez zbędnego żargonu.">
+<meta name="keywords" content="strony internetowe Kielce, strony www świętokrzyskie, tworzenie stron dla firm, strona dla mechanika, strona dla fryzjerki, strona dla fizjoterapeuty, web developer Kielce">
+<meta name="author" content="Mateusz [Nazwisko]">
+<meta name="robots" content="index, follow">
+<link rel="canonical" href="https://example.com/">
+<link rel="icon" type="image/svg+xml" href="images/favicon.svg">
+<link rel="icon" type="image/png" sizes="32x32" href="images/favicon-32.png">
+
+<!-- Open Graph -->
+<meta property="og:type" content="website">
+<meta property="og:title" content="Mateusz [Nazwisko] — Strony internetowe dla lokalnych firm">
+<meta property="og:description" content="Strony internetowe dla małych firm w woj. świętokrzyskim. Szybko, przejrzyście, bez zbędnego żargonu.">
+<meta property="og:locale" content="pl_PL">
+<meta property="og:url" content="https://example.com/">
+<meta property="og:image" content="https://example.com/images/og-image.png">
+<meta property="og:image:width" content="1200">
+<meta property="og:image:height" content="630">
+
+<!-- Twitter -->
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:title" content="Mateusz [Nazwisko] — Strony internetowe dla lokalnych firm">
+<meta name="twitter:description" content="Strony internetowe dla małych firm w woj. świętokrzyskim.">
+<meta name="twitter:image" content="https://example.com/images/og-image.png">
+<!-- Structured data: lokalny rzemieślnik / freelancer -->
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "ProfessionalService",
+  "name": "Mateusz [Nazwisko] — Strony internetowe",
+  "description": "Tworzenie stron internetowych dla małych firm i jednoosobowych działalności w województwie świętokrzyskim.",
+  "areaServed": {
+    "@type": "State",
+    "name": "Województwo Świętokrzyskie"
+  },
+  "address": {
+    "@type": "PostalAddress",
+    "addressRegion": "Świętokrzyskie",
+    "addressCountry": "PL"
+  },
+  "email": "twoj@email.pl",
+  "telephone": "+48XXXXXXXXX",
+  "url": "https://example.com/",
+  "priceRange": "990-3000 PLN"
+}
+</script>
+
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "FAQPage",
+  "mainEntity": [
+    {
+      "@type": "Question",
+      "name": "Ile trwa wykonanie strony?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Zwykle 5–10 dni roboczych od momentu, gdy klient przekaże treści i zdjęcia. Proste wizytówki mogą być gotowe szybciej."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Czy mogę sam edytować treści po wdrożeniu?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Drobne zmiany takie jak tekst, telefon czy godziny otwarcia są wprowadzane bezpłatnie w pierwszym miesiącu po wdrożeniu."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Ile kosztuje utrzymanie strony?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Domena i hosting na pierwsze 12 miesięcy są wliczone w cenę projektu. Później koszt utrzymania to zwykle kilkadziesiąt złotych rocznie za domenę."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Czy pomagasz z domeną?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Tak, wybór i podłączenie domeny jest częścią procesu realizacji projektu."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Czy wystawiasz fakturę?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Działalność jest prowadzona w formie nierejestrowanej, więc rozliczenie odbywa się na rachunek lub umowę, nie fakturę VAT."
+      }
+    }
+  ]
+}
+</script>
+
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,300;9..144,500;9..144,600;9..144,700&family=Inter:wght@400;500;600&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet">
+
+<style>
+  :root {
+    --mala: #2A2312;
+    --mala-deep: #1A1509;
+    --turmeric: #FFBE0B;
+    --paper: #F5EFE0;
+    --muted: #8A7F63;
+    --muted-dim: #6b624c;
+    --line: rgba(245, 239, 224, 0.12);
+  }
+
+  * { margin: 0; padding: 0; box-sizing: border-box; }
+
+  html { scroll-behavior: smooth; }
+
+  @media (prefers-reduced-motion: reduce) {
+    html { scroll-behavior: auto; }
+    * { animation-duration: 0.01ms !important; transition-duration: 0.01ms !important; }
+  }
+
+  body {
+    background: var(--mala);
+    color: var(--paper);
+    font-family: 'Inter', sans-serif;
+    line-height: 1.6;
+    overflow-x: hidden;
+  }
+
+  a { color: inherit; text-decoration: none; }
+
+  img { max-width: 100%; display: block; }
+
+  :focus-visible {
+    outline: 2px solid var(--turmeric);
+    outline-offset: 3px;
+  }
+
+  .wrap {
+    max-width: 1140px;
+    margin: 0 auto;
+    padding: 0 28px;
+  }
+
+  h1, h2, h3 {
+    font-family: 'Fraunces', serif;
+    font-weight: 600;
+    letter-spacing: -0.01em;
+  }
+
+  .mono {
+    font-family: 'JetBrains Mono', monospace;
+    letter-spacing: 0.02em;
+  }
+
+  .eyebrow {
+    font-family: 'JetBrains Mono', monospace;
+    font-size: 0.78rem;
+    letter-spacing: 0.12em;
+    text-transform: uppercase;
+    color: var(--turmeric);
+    display: flex;
+    align-items: center;
+    gap: 10px;
+  }
+
+  .eyebrow::before {
+    content: '';
+    width: 18px;
+    height: 1px;
+    background: var(--turmeric);
+  }
+
+  /* ===== NAV ===== */
+  nav {
+    position: sticky;
+    top: 0;
+    z-index: 100;
+    background: rgba(42, 35, 18, 0.92);
+    backdrop-filter: blur(8px);
+    border-bottom: 1px solid var(--line);
+  }
+
+  nav .wrap {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 18px 28px;
+  }
+
+  .logo {
+    font-family: 'Fraunces', serif;
+    font-weight: 600;
+    font-size: 1.15rem;
+  }
+  .logo span { color: var(--turmeric); }
+
+  .nav-links {
+    display: flex;
+    gap: 32px;
+    font-size: 0.92rem;
+    color: var(--paper);
+  }
+
+  .nav-links a {
+    position: relative;
+    padding: 4px 0;
+    opacity: 0.85;
+    transition: opacity 0.2s;
+  }
+  .nav-links a:hover { opacity: 1; }
+
+  .nav-cta {
+    background: var(--turmeric);
+    color: var(--mala-deep);
+    padding: 9px 20px;
+    border-radius: 3px;
+    font-weight: 600;
+    font-size: 0.88rem;
+    transition: transform 0.2s ease, box-shadow 0.2s ease;
+  }
+  .nav-cta:hover { transform: translateY(-1px); box-shadow: 0 6px 16px rgba(255,190,11,0.25); }
+
+  .nav-toggle { display: none; }
+
+  @media (max-width: 760px) {
+    .nav-links { display: none; }
+    .nav-toggle { display: block; background: none; border: none; color: var(--paper); font-size: 1.4rem; }
+  }
+
+  /* ===== HERO ===== */
+  .hero {
+    position: relative;
+    padding: 130px 0 110px;
+    overflow: hidden;
+  }
+
+  .hero::before {
+    content: '';
+    position: absolute;
+    top: -200px;
+    right: -150px;
+    width: 600px;
+    height: 600px;
+    background: radial-gradient(circle, rgba(255,190,11,0.10), transparent 70%);
+    pointer-events: none;
+  }
+
+  .hero-grid {
+    position: relative;
+    display: grid;
+    grid-template-columns: 1.3fr 1fr;
+    gap: 60px;
+    align-items: end;
+  }
+
+  .hero h1 {
+    font-size: clamp(2rem, 4.1vw, 3.2rem);
+    line-height: 1.16;
+    margin: 22px 0 26px;
+  }
+
+  .hero h1 em {
+    font-style: normal;
+    color: var(--turmeric);
+  }
+
+  .hero p.lead {
+    font-size: 1.12rem;
+    color: var(--paper);
+    opacity: 0.82;
+    max-width: 480px;
+    margin-bottom: 36px;
+  }
+
+  .hero-ctas { display: flex; gap: 16px; flex-wrap: wrap; }
+
+  .hero-trust {
+    list-style: none;
+    display: flex;
+    gap: 24px;
+    flex-wrap: wrap;
+    margin-top: 28px;
+    font-size: 0.84rem;
+    color: var(--muted);
+  }
+  .hero-trust li { display: flex; align-items: center; gap: 7px; }
+  .hero-trust li::before {
+    content: '✓';
+    color: var(--turmeric);
+    font-weight: 600;
+  }
+
+  .btn-primary {
+    background: var(--turmeric);
+    color: var(--mala-deep);
+    padding: 14px 28px;
+    border-radius: 3px;
+    font-weight: 600;
+    font-size: 0.95rem;
+    display: inline-block;
+    transition: transform 0.2s ease, box-shadow 0.2s ease;
+  }
+  .btn-primary:hover { transform: translateY(-2px); box-shadow: 0 10px 24px rgba(255,190,11,0.22); }
+
+  .btn-ghost {
+    border: 1px solid var(--line);
+    color: var(--paper);
+    padding: 14px 28px;
+    border-radius: 3px;
+    font-weight: 500;
+    font-size: 0.95rem;
+    display: inline-block;
+    transition: border-color 0.2s ease, background 0.2s ease;
+  }
+  .btn-ghost:hover { border-color: var(--turmeric); background: rgba(255,190,11,0.06); }
+
+  /* dossier card in hero */
+  .dossier {
+    border: 1px solid var(--line);
+    border-radius: 4px;
+    padding: 26px;
+    background: var(--mala-deep);
+  }
+  .dossier-row {
+    display: flex;
+    justify-content: space-between;
+    font-size: 0.84rem;
+    padding: 10px 0;
+    border-bottom: 1px solid var(--line);
+  }
+  .dossier-row:last-child { border-bottom: none; }
+  .dossier-row span:first-child { color: var(--muted); }
+  .dossier-row span:last-child { font-family: 'JetBrains Mono', monospace; }
+
+  /* ===== SECTION SPACING ===== */
+  section { padding: 100px 0; }
+  section.tight { padding: 70px 0; }
+
+  .section-head {
+    max-width: 620px;
+    margin-bottom: 56px;
+  }
+  .section-head h2 {
+    font-size: clamp(1.9rem, 3.4vw, 2.6rem);
+    margin-top: 16px;
+  }
+  .section-head p {
+    color: var(--muted);
+    margin-top: 14px;
+    font-size: 1.02rem;
+  }
+
+  /* ===== ABOUT ===== */
+  .about {
+    background: var(--mala-deep);
+    border-top: 1px solid var(--line);
+    border-bottom: 1px solid var(--line);
+  }
+  .about-text-full {
+    max-width: 680px;
+  }
+  .about-text-full p { margin-bottom: 18px; color: var(--paper); opacity: 0.88; }
+  .about-text-full p:first-of-type {
+    font-size: 1.18rem;
+    font-family: 'Fraunces', serif;
+    font-weight: 500;
+    opacity: 1;
+    line-height: 1.5;
+  }
+
+  /* ===== TRUST ===== */
+  .trust-grid {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 18px 40px;
+  }
+  .trust-item {
+    display: flex;
+    align-items: flex-start;
+    gap: 12px;
+    font-size: 0.98rem;
+    padding: 6px 0;
+  }
+  .trust-check {
+    color: var(--turmeric);
+    font-weight: 700;
+    flex-shrink: 0;
+  }
+  @media (max-width: 700px) {
+    .trust-grid { grid-template-columns: 1fr; }
+  }
+
+  .included-grid {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 18px 40px;
+  }
+  .included-item {
+    display: flex;
+    align-items: flex-start;
+    gap: 12px;
+    font-size: 0.98rem;
+    padding: 6px 0;
+  }
+  @media (max-width: 700px) {
+    .included-grid { grid-template-columns: 1fr; }
+  }
+
+  /* ===== PORTFOLIO — kartoteka ===== */
+  .ledger-list {
+    border-top: 1px solid var(--line);
+  }
+
+  .ledger-head-row {
+    display: grid;
+    grid-template-columns: 70px 1.6fr 1fr 1fr 110px;
+    gap: 20px;
+    padding: 14px 0;
+    font-size: 0.74rem;
+    text-transform: uppercase;
+    letter-spacing: 0.08em;
+    color: var(--muted);
+    font-family: 'JetBrains Mono', monospace;
+  }
+
+  .ledger-item {
+    display: grid;
+    grid-template-columns: 70px 1.6fr 1fr 1fr 110px;
+    gap: 20px;
+    align-items: center;
+    padding: 26px 0;
+    border-bottom: 1px solid var(--line);
+    transition: background 0.25s ease;
+  }
+  .ledger-item:hover { background: rgba(255,190,11,0.04); }
+
+  .ledger-num {
+    font-family: 'JetBrains Mono', monospace;
+    color: var(--muted);
+    font-size: 0.85rem;
+  }
+
+  .ledger-main { display: flex; align-items: center; gap: 18px; }
+
+  .ledger-thumb {
+    width: 86px;
+    height: 60px;
+    border-radius: 3px;
+    flex-shrink: 0;
+    border: 1px solid var(--line);
+    background: var(--mala-deep);
+    position: relative;
+    overflow: hidden;
+  }
+  .ledger-thumb img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    object-position: top center;
+    display: block;
+  }
+
+  .ledger-title {
+    font-family: 'Fraunces', serif;
+    font-size: 1.08rem;
+    font-weight: 600;
+  }
+  .ledger-sub {
+    font-size: 0.84rem;
+    color: var(--muted);
+    margin-top: 2px;
+  }
+
+  .ledger-place, .ledger-tag {
+    font-size: 0.88rem;
+    color: var(--paper);
+    opacity: 0.85;
+  }
+  .ledger-tag { font-family: 'JetBrains Mono', monospace; font-size: 0.78rem; color: var(--muted); }
+
+  .ledger-link {
+    font-size: 0.84rem;
+    font-weight: 600;
+    color: var(--turmeric);
+    text-align: right;
+    white-space: nowrap;
+  }
+  .ledger-link::after { content: ' →'; }
+
+  @media (max-width: 860px) {
+    .ledger-head-row { display: none; }
+    .ledger-item {
+      grid-template-columns: 1fr;
+      gap: 12px;
+      padding: 22px 0;
+    }
+    .ledger-main { gap: 14px; }
+    .ledger-link { text-align: left; }
+  }
+
+  /* ===== PROCESS ===== */
+  .process-grid {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 1px;
+    background: var(--line);
+    border: 1px solid var(--line);
+  }
+  .process-step {
+    background: var(--mala);
+    padding: 32px 26px;
+  }
+  .process-step .step-mono {
+    font-family: 'JetBrains Mono', monospace;
+    font-size: 0.78rem;
+    color: var(--turmeric);
+  }
+  .process-step h3 {
+    font-size: 1.1rem;
+    margin: 14px 0 10px;
+  }
+  .process-step p {
+    font-size: 0.9rem;
+    color: var(--muted);
+  }
+
+  @media (max-width: 860px) {
+    .process-grid { grid-template-columns: 1fr; }
+  }
+
+  /* ===== PRICING ===== */
+  .pricing {
+    background: var(--mala-deep);
+    border-top: 1px solid var(--line);
+    border-bottom: 1px solid var(--line);
+  }
+  .price-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 24px;
+  }
+  .price-card {
+    border: 1px solid var(--line);
+    border-radius: 4px;
+    padding: 36px 30px;
+    background: var(--mala);
+    display: flex;
+    flex-direction: column;
+  }
+  .price-card.featured {
+    border-color: var(--turmeric);
+    background: linear-gradient(165deg, rgba(255,190,11,0.07), var(--mala) 60%);
+    position: relative;
+  }
+  .price-card.featured::before {
+    content: 'najczęściej wybierany';
+    position: absolute;
+    top: -1px; right: -1px;
+    background: var(--turmeric);
+    color: var(--mala-deep);
+    font-family: 'JetBrains Mono', monospace;
+    font-size: 0.66rem;
+    text-transform: uppercase;
+    letter-spacing: 0.05em;
+    padding: 6px 12px;
+    border-radius: 0 4px 0 4px;
+  }
+  .price-name { font-size: 0.88rem; color: var(--muted); font-family: 'JetBrains Mono', monospace; }
+  .price-amount {
+    font-family: 'Fraunces', serif;
+    font-size: 2.5rem;
+    font-weight: 600;
+    margin: 10px 0 4px;
+    color: var(--paper);
+  }
+  .price-amount span { font-size: 1rem; color: var(--muted); font-family: 'Inter', sans-serif; }
+  .price-for { font-size: 0.86rem; color: var(--muted); margin-bottom: 24px; }
+  .price-features {
+    list-style: none;
+    margin: 0 0 28px;
+    flex-grow: 1;
+  }
+  .price-features li {
+    font-size: 0.9rem;
+    padding: 9px 0;
+    border-top: 1px solid var(--line);
+    display: flex;
+    gap: 10px;
+  }
+  .price-features li:first-child { border-top: none; }
+  .price-features li::before { content: '—'; color: var(--turmeric); flex-shrink: 0; }
+
+  .price-cta {
+    text-align: center;
+    padding: 13px;
+    border-radius: 3px;
+    font-weight: 600;
+    font-size: 0.9rem;
+    border: 1px solid var(--line);
+    transition: all 0.2s ease;
+  }
+  .price-card.featured .price-cta { background: var(--turmeric); color: var(--mala-deep); border-color: var(--turmeric); }
+  .price-cta:hover { border-color: var(--turmeric); }
+
+  .pricing-note {
+    margin-top: 30px;
+    font-size: 0.86rem;
+    color: var(--muted);
+    text-align: center;
+  }
+
+  @media (max-width: 900px) {
+    .price-grid { grid-template-columns: 1fr; }
+  }
+
+  /* ===== WHERE I WORK ===== */
+  .city-list {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 12px;
+  }
+  .city-chip {
+    border: 1px solid var(--line);
+    border-radius: 30px;
+    padding: 9px 20px;
+    font-size: 0.88rem;
+    color: var(--paper);
+    font-family: 'JetBrains Mono', monospace;
+  }
+
+  /* ===== FAQ ===== */
+  .faq-list {
+    border-top: 1px solid var(--line);
+  }
+  .faq-item {
+    border-bottom: 1px solid var(--line);
+    padding: 20px 0;
+  }
+  .faq-item summary {
+    cursor: pointer;
+    font-family: 'Fraunces', serif;
+    font-size: 1.05rem;
+    font-weight: 500;
+    list-style: none;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  .faq-item summary::-webkit-details-marker { display: none; }
+  .faq-item summary::after {
+    content: '+';
+    color: var(--turmeric);
+    font-size: 1.3rem;
+    font-family: 'Inter', sans-serif;
+    margin-left: 20px;
+    flex-shrink: 0;
+  }
+  .faq-item[open] summary::after { content: '–'; }
+  .faq-item p {
+    margin-top: 14px;
+    color: var(--muted);
+    font-size: 0.94rem;
+    max-width: 640px;
+  }
+
+  /* ===== CONTACT ===== */
+  .contact-grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 70px;
+    align-items: center;
+  }
+  .contact-portrait {
+    width: 84px;
+    height: 84px;
+    border-radius: 50%;
+    background: linear-gradient(160deg, var(--mala) 0%, var(--mala-deep) 100%);
+    border: 1px solid var(--line);
+    margin-bottom: 22px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+    overflow: hidden;
+  }
+  .contact-portrait::after {
+    content: 'MK';
+    font-family: 'Fraunces', serif;
+    font-size: 1.3rem;
+    color: rgba(255,190,11,0.3);
+    font-weight: 600;
+  }
+  .contact-list { margin-top: 30px; }
+  .contact-row {
+    display: flex;
+    justify-content: space-between;
+    padding: 16px 0;
+    border-bottom: 1px solid var(--line);
+    font-size: 0.95rem;
+  }
+  .contact-row span:first-child { color: var(--muted); }
+  .contact-row a { color: var(--turmeric); font-weight: 500; }
+
+  .contact-card {
+    border: 1px solid var(--line);
+    border-radius: 4px;
+    padding: 38px;
+    background: var(--mala-deep);
+  }
+  .contact-card .eyebrow { margin-bottom: 18px; }
+  .field { margin-bottom: 18px; }
+  .field label {
+    display: block;
+    font-size: 0.82rem;
+    color: var(--muted);
+    margin-bottom: 7px;
+  }
+  .field input, .field textarea {
+    width: 100%;
+    background: var(--mala);
+    border: 1px solid var(--line);
+    border-radius: 3px;
+    padding: 12px 14px;
+    color: var(--paper);
+    font-family: 'Inter', sans-serif;
+    font-size: 0.92rem;
+  }
+  .field input:focus, .field textarea:focus {
+    outline: none;
+    border-color: var(--turmeric);
+  }
+  .field textarea { resize: vertical; min-height: 90px; }
+
+  .submit-btn {
+    width: 100%;
+    background: var(--turmeric);
+    color: var(--mala-deep);
+    border: none;
+    padding: 14px;
+    border-radius: 3px;
+    font-weight: 600;
+    font-size: 0.95rem;
+    cursor: pointer;
+    transition: transform 0.2s ease;
+    font-family: 'Inter', sans-serif;
+  }
+  .submit-btn:hover { transform: translateY(-1px); }
+
+  @media (max-width: 860px) {
+    .contact-grid { grid-template-columns: 1fr; gap: 50px; }
+  }
+
+  /* ===== FOOTER ===== */
+  footer {
+    padding: 40px 0;
+    border-top: 1px solid var(--line);
+  }
+  footer .wrap {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    font-size: 0.84rem;
+    color: var(--muted);
+  }
+
+  @media (max-width: 600px) {
+    footer .wrap { flex-direction: column; gap: 10px; text-align: center; }
+  }
+
+  @media (max-width: 900px) {
+    .hero-grid { grid-template-columns: 1fr; gap: 40px; }
+  }
+
+  /* reveal on scroll */
+  .reveal {
+    opacity: 0;
+    transform: translateY(16px);
+    transition: opacity 0.7s ease, transform 0.7s ease;
+  }
+  .reveal.in { opacity: 1; transform: translateY(0); }
+</style>
+</head>
+<body>
+
+<nav>
+  <div class="wrap">
+    <div class="logo">Mateusz <span>[Nazwisko]</span></div>
+    <div class="nav-links">
+      <a href="#o-mnie">O mnie</a>
+      <a href="#projekty">Projekty</a>
+      <a href="#cennik">Cennik</a>
+      <a href="#faq">FAQ</a>
+    </div>
+    <a href="#kontakt" class="nav-cta">Napisz do mnie</a>
+  </div>
+</nav>
+
+<header class="hero">
+  <div class="wrap hero-grid">
+    <div>
+      <div class="eyebrow">Strony internetowe · woj. świętokrzyskie</div>
+      <h1>Tworzenie stron internetowych dla firm w woj. świętokrzyskim, które <em>przyciągają klientów z Google</em>.</h1>
+      <p class="lead">Projekt w 5–10 dni · od 990 zł. Pracuję dla mechaników, fryzjerek, gabinetów i innych lokalnych firm w Kielcach i powiatach.</p>
+      <div class="hero-ctas">
+        <a href="#kontakt" class="btn-primary">Darmowa wycena</a>
+        <a href="#projekty" class="btn-ghost">Zobacz przykłady</a>
+      </div>
+      <ul class="hero-trust">
+        <li>Darmowa wycena</li>
+        <li>Odpowiedź w 24h</li>
+        <li>Jedna osoba od początku do końca</li>
+      </ul>
+    </div>
+    <div class="dossier">
+      <div class="eyebrow" style="margin-bottom:18px;">Notatka z teczki</div>
+      <div class="dossier-row"><span>Działam w</span><span>Świętokrzyskie</span></div>
+      <div class="dossier-row"><span>Specjalizacja</span><span>lokalne firmy</span></div>
+      <div class="dossier-row"><span>Czas realizacji</span><span>5–10 dni</span></div>
+      <div class="dossier-row"><span>Stos technologii</span><span>HTML/CSS/JS</span></div>
+      <div class="dossier-row"><span>Hosting</span><span>szybki, bez limitów</span></div>
+    </div>
+  </div>
+</header>
+
+<section class="about" id="o-mnie">
+  <div class="wrap">
+    <div class="about-text-full">
+      <div class="eyebrow">O mnie</div>
+      <h2 style="margin: 16px 0 24px;">Jeden człowiek, jeden kontakt, żadnego "przekażę do działu".</h2>
+      <p>Nazywam się Mateusz i robię strony internetowe dla małych firm w Kielcach i okolicznych powiatach. Bez korporacyjnego pośrednika — piszesz albo dzwonisz do mnie, a ja prowadzę projekt od początku do końca.</p>
+      <p>Wiem, jak wygląda branża lokalna z bliska — bo strony, które robię, trafiają do prawdziwych mechaników, fryzjerek i fizjoterapeutów z mojego regionu. Wiem, czego potrzebuje gabinet w Bilczy, a czego warsztat w Jędrzejowie — i to nie są te same rzeczy.</p>
+      <p>Nie sprzedaję Ci szablonu z internetu. Każda strona jest budowana pod Twoją branżę, Twoich klientów i to, jak faktycznie szukają Cię w Google.</p>
+    </div>
+  </div>
+</section>
+
+<section class="trust tight">
+  <div class="wrap">
+    <div class="section-head" style="margin-bottom: 36px;">
+      <div class="eyebrow">Dlaczego klienci wybierają mnie</div>
+      <h2>Bez niespodzianek po podpisaniu.</h2>
+    </div>
+    <div class="trust-grid">
+      <div class="trust-item">
+        <span class="trust-check">✓</span>
+        <span>Odpowiadam tego samego dnia</span>
+      </div>
+      <div class="trust-item">
+        <span class="trust-check">✓</span>
+        <span>Nie znikam po wdrożeniu strony</span>
+      </div>
+      <div class="trust-item">
+        <span class="trust-check">✓</span>
+        <span>Bez ukrytych kosztów — cena z wyceny to cena na fakturze</span>
+      </div>
+      <div class="trust-item">
+        <span class="trust-check">✓</span>
+        <span>Sam projektuję i wdrażam — żadnego podwykonawcy</span>
+      </div>
+      <div class="trust-item">
+        <span class="trust-check">✓</span>
+        <span>Prosty język, bez żargonu agencyjnego</span>
+      </div>
+      <div class="trust-item">
+        <span class="trust-check">✓</span>
+        <span>Wycena zawsze przed rozpoczęciem prac</span>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section id="projekty">
+  <div class="wrap">
+    <div class="section-head">
+      <div class="eyebrow">Przykłady stylu</div>
+      <h2>Tak projektuję dla różnych branż.</h2>
+      <p>To projekty demonstracyjne — pokazują sposób pracy i podejście do różnych typów działalności, nie listę klientów. Każdy zbudowany od zera, w pełnej wersji produkcyjnej.</p>
+    </div>
+
+    <div class="ledger-list">
+      <div class="ledger-head-row">
+        <span>Nr</span>
+        <span>Projekt</span>
+        <span>Efekt</span>
+        <span>Branża</span>
+        <span></span>
+      </div>
+
+      <a class="ledger-item reveal" href="#" target="_blank" rel="noopener">
+        <span class="ledger-num">01</span>
+        <div class="ledger-main">
+          <div class="ledger-thumb"><img src="images/portfolio-fizjoterapia.jpg" alt="Miniatura strony — gabinet fizjoterapii" loading="lazy"></div>
+          <div>
+            <div class="ledger-title">Koncepcja dla gabinetu fizjoterapii</div>
+            <div class="ledger-sub">Strona budująca zaufanie pacjenta od pierwszego wejścia</div>
+          </div>
+        </div>
+        <span class="ledger-place">spokojny, profesjonalny</span>
+        <span class="ledger-tag">fizjoterapia</span>
+        <span class="ledger-link">zobacz demo</span>
+      </a>
+
+      <a class="ledger-item reveal" href="#" target="_blank" rel="noopener">
+        <span class="ledger-num">02</span>
+        <div class="ledger-main">
+          <div class="ledger-thumb"><img src="images/portfolio-fryzjer.jpg" alt="Miniatura strony — salon fryzjerski" loading="lazy"></div>
+          <div>
+            <div class="ledger-title">Koncepcja dla salonu fryzjerskiego</div>
+            <div class="ledger-sub">Strona, która zachęca do rezerwacji wizyty na pierwszy rzut oka</div>
+          </div>
+        </div>
+        <span class="ledger-place">kameralny, zachęcający</span>
+        <span class="ledger-tag">fryzjerstwo</span>
+        <span class="ledger-link">zobacz demo</span>
+      </a>
+
+      <a class="ledger-item reveal" href="#" target="_blank" rel="noopener">
+        <span class="ledger-num">03</span>
+        <div class="ledger-main">
+          <div class="ledger-thumb"><img src="images/portfolio-warsztat.jpg" alt="Miniatura strony — warsztat samochodowy" loading="lazy"></div>
+          <div>
+            <div class="ledger-title">Koncepcja dla warsztatu samochodowego</div>
+            <div class="ledger-sub">Strona, która jasno mówi co naprawiasz, zanim klient zadzwoni</div>
+          </div>
+        </div>
+        <span class="ledger-place">konkretny, rzemieślniczy</span>
+        <span class="ledger-tag">auto-serwis</span>
+        <span class="ledger-link">zobacz demo</span>
+      </a>
+
+      <a class="ledger-item reveal" href="#" target="_blank" rel="noopener">
+        <span class="ledger-num">04</span>
+        <div class="ledger-main">
+          <div class="ledger-thumb"><img src="images/portfolio-dietetyk.jpg" alt="Miniatura strony — gabinet dietetyczny" loading="lazy"></div>
+          <div>
+            <div class="ledger-title">Koncepcja dla gabinetu dietetycznego</div>
+            <div class="ledger-sub">Strona pozycjonująca usługę jako premium, nie masową</div>
+          </div>
+        </div>
+        <span class="ledger-place">premium, stonowany</span>
+        <span class="ledger-tag">dietetyka</span>
+        <span class="ledger-link">zobacz demo</span>
+      </a>
+
+      <a class="ledger-item reveal" href="#" target="_blank" rel="noopener">
+        <span class="ledger-num">05</span>
+        <div class="ledger-main">
+          <div class="ledger-thumb"><img src="images/portfolio-logopeda.jpg" alt="Miniatura strony — gabinet logopedyczny" loading="lazy"></div>
+          <div>
+            <div class="ledger-title">Koncepcja dla gabinetu logopedycznego</div>
+            <div class="ledger-sub">Strona, która łagodzi obawy rodzica przed pierwszą wizytą</div>
+          </div>
+        </div>
+        <span class="ledger-place">delikatny, profesjonalny</span>
+        <span class="ledger-tag">logopedia</span>
+        <span class="ledger-link">zobacz demo</span>
+      </a>
+    </div>
+
+    <p style="margin-top: 28px; font-size: 0.86rem; color: var(--muted);">Strony klientów nie są tu publikowane bez ich zgody — to dobra praktyka, nie zaniedbanie. Powyższe to w pełni działające projekty demonstracyjne, zbudowane do prezentacji stylu i jakości wykonania.</p>
+  </div>
+</section>
+
+<section class="tight" id="proces">
+  <div class="wrap">
+    <div class="section-head">
+      <div class="eyebrow">Jak to wygląda</div>
+      <h2>Cztery kroki, bez niedomówień.</h2>
+    </div>
+    <div class="process-grid">
+      <div class="process-step">
+        <div class="step-mono mono">rozmowa</div>
+        <h3>Mówisz, czego potrzebujesz</h3>
+        <p>Krótka rozmowa telefoniczna albo wiadomość — co robisz, kto jest Twoim klientem, co ma się znaleźć na stronie.</p>
+      </div>
+      <div class="process-step">
+        <div class="step-mono mono">wycena</div>
+        <h3>Dostajesz konkretną cenę</h3>
+        <p>Bez "to zależy". Podaję jasną kwotę i termin, zanim zaczniesz się zastanawiać, czy to się opłaca.</p>
+      </div>
+      <div class="process-step">
+        <div class="step-mono mono">budowa</div>
+        <h3>Buduję i pokazuję postępy</h3>
+        <p>Widzisz stronę na żywo w trakcie budowy — poprawki wprowadzam na bieżąco, nie na końcu.</p>
+      </div>
+      <div class="process-step">
+        <div class="step-mono mono">start</div>
+        <h3>Strona rusza, Ty masz spokój</h3>
+        <p>Publikuję stronę, pokazuję jak nią zarządzać i zostaję pod telefonem, gdyby coś trzeba było zmienić.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="tight whats-included">
+  <div class="wrap">
+    <div class="section-head" style="margin-bottom: 36px;">
+      <div class="eyebrow">W cenie każdej strony</div>
+      <h2>Bez dopłat za to, co powinno być standardem.</h2>
+    </div>
+    <div class="included-grid">
+      <div class="included-item">
+        <span class="trust-check">✓</span>
+        <span>Projekt indywidualny, nie szablon</span>
+      </div>
+      <div class="included-item">
+        <span class="trust-check">✓</span>
+        <span>Pełna wersja na telefon i tablet</span>
+      </div>
+      <div class="included-item">
+        <span class="trust-check">✓</span>
+        <span>Formularz kontaktowy</span>
+      </div>
+      <div class="included-item">
+        <span class="trust-check">✓</span>
+        <span>Podłączenie Google Maps</span>
+      </div>
+      <div class="included-item">
+        <span class="trust-check">✓</span>
+        <span>Podstawowe SEO pod Twoją lokalizację</span>
+      </div>
+      <div class="included-item">
+        <span class="trust-check">✓</span>
+        <span>Pomoc po wdrożeniu, nie tylko do startu</span>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="pricing" id="cennik">
+  <div class="wrap">
+    <div class="section-head">
+      <div class="eyebrow">Cennik</div>
+      <h2>Ceny pod realia lokalnego biznesu.</h2>
+      <p>Stawki dopasowane do małych firm w powiatach świętokrzyskich — żadnych cen agencji z dużego miasta.</p>
+    </div>
+
+    <div class="price-grid">
+      <div class="price-card">
+        <div class="price-name mono">WIZYTÓWKA</div>
+        <div class="price-amount">od 990 zł<span> / jednorazowo</span></div>
+        <div class="price-for">Dla jednoosobowej działalności, która potrzebuje obecności w Google.</div>
+        <ul class="price-features">
+          <li>Strona jednostronowa (oferta, kontakt, opinie)</li>
+          <li>Wersja mobilna</li>
+          <li>Mapa i dane firmy (Google)</li>
+          <li>Domena i hosting na 12 miesięcy</li>
+        </ul>
+        <a href="#kontakt" class="price-cta">Wybierz ten pakiet</a>
+      </div>
+
+      <div class="price-card featured">
+        <div class="price-name mono">DZIAŁALNOŚĆ</div>
+        <div class="price-amount">od 1 790 zł<span> / jednorazowo</span></div>
+        <div class="price-for">Najczęstszy wybór lokalnych firm — pełna strona z kilkoma podstronami.</div>
+        <ul class="price-features">
+          <li>Do 5 podstron (oferta, cennik, o nas, kontakt)</li>
+          <li>Podstawowe SEO pod nazwę miejscowości</li>
+          <li>Formularz kontaktowy</li>
+          <li>Domena i hosting na 12 miesięcy</li>
+          <li>Jedna runda poprawek po starcie</li>
+        </ul>
+        <a href="#kontakt" class="price-cta">Wybierz ten pakiet</a>
+      </div>
+
+      <div class="price-card">
+        <div class="price-name mono">ROZBUDOWANA</div>
+        <div class="price-amount">od 2 690 zł<span> / projekt</span></div>
+        <div class="price-for">Dla firm z większą ofertą, galerią, blogiem albo rezerwacją online.</div>
+        <ul class="price-features">
+          <li>Dowolna liczba podstron</li>
+          <li>Galeria zdjęć / case studies</li>
+          <li>Integracja z kalendarzem lub rezerwacją</li>
+          <li>Rozszerzone SEO lokalne</li>
+          <li>Pomoc po wdrożeniu</li>
+        </ul>
+        <a href="#kontakt" class="price-cta">Zapytaj o szczegóły</a>
+      </div>
+    </div>
+
+    <p class="pricing-note">Ceny netto dla działalności jednoosobowych. Dla firm w powiatach świętokrzyskich możliwy dojazd na rozmowę bez dodatkowych kosztów.</p>
+  </div>
+</section>
+
+<section class="tight where-i-work">
+  <div class="wrap">
+    <div class="section-head" style="margin-bottom: 30px;">
+      <div class="eyebrow">Gdzie działam</div>
+      <h2>Województwo świętokrzyskie, bez wyjątków.</h2>
+      <p>Najczęściej pracuję dla firm z tych miejscowości i okolic — ale dojeżdżam też dalej, jeśli projekt ma sens.</p>
+    </div>
+    <div class="city-list">
+      <span class="city-chip">Kielce</span>
+      <span class="city-chip">Jędrzejów</span>
+      <span class="city-chip">Busko-Zdrój</span>
+      <span class="city-chip">Starachowice</span>
+      <span class="city-chip">Ostrowiec Świętokrzyski</span>
+      <span class="city-chip">Skarżysko-Kamienna</span>
+    </div>
+  </div>
+</section>
+
+<section class="tight faq" id="faq">
+  <div class="wrap">
+    <div class="section-head" style="margin-bottom: 36px;">
+      <div class="eyebrow">FAQ</div>
+      <h2>Najczęstsze pytania.</h2>
+    </div>
+    <div class="faq-list">
+      <details class="faq-item">
+        <summary>Ile trwa wykonanie strony?</summary>
+        <p>Zwykle 5–10 dni roboczych od momentu, gdy mam od Ciebie treści i zdjęcia. Proste wizytówki mogą być gotowe nawet szybciej.</p>
+      </details>
+      <details class="faq-item">
+        <summary>Czy mogę sam edytować treści po wdrożeniu?</summary>
+        <p>Strony budowane w tym standardzie nie wymagają panelu CMS — drobne zmiany (tekst, telefon, godziny otwarcia) robię dla Ciebie szybko i bez dodatkowych kosztów w pierwszym miesiącu. Większe zmiany ustalamy indywidualnie.</p>
+      </details>
+      <details class="faq-item">
+        <summary>Ile kosztuje utrzymanie strony?</summary>
+        <p>Domena i hosting na pierwsze 12 miesięcy są wliczone w cenę projektu. Po tym czasie koszt utrzymania to zwykle kilkadziesiąt złotych rocznie za domenę.</p>
+      </details>
+      <details class="faq-item">
+        <summary>Czy pomagasz z domeną?</summary>
+        <p>Tak — wybieram i podłączam domenę razem z Tobą, tłumaczę co i czemu, żebyś rozumiał, za co płacisz.</p>
+      </details>
+      <details class="faq-item">
+        <summary>Czy wystawiasz fakturę?</summary>
+        <p>Działam w ramach działalności nierejestrowanej, więc wystawiam rachunek lub rozliczam projekt na umowę — nie fakturę VAT. Dla większości jednoosobowych firm to w pełni wystarczający dokument kosztowy.</p>
+      </details>
+    </div>
+  </div>
+</section>
+
+<section id="kontakt">
+  <div class="wrap contact-grid">
+    <div>
+      <div class="contact-portrait" aria-hidden="true"></div>
+      <div class="eyebrow">Kontakt</div>
+      <h2 style="margin: 16px 0 10px;">Napiszmy, jak ma wyglądać Twoja strona.</h2>
+      <p style="color: var(--muted);">Odpowiadam tego samego dnia, najpóźniej w ciągu 24h. Wycena jest bezpłatna i nie zobowiązuje Cię do niczego — to po prostu rozmowa o Twojej firmie.</p>
+      <div class="contact-list">
+        <div class="contact-row"><span>Email</span><a href="mailto:twoj@email.pl">twoj@email.pl</a></div>
+        <div class="contact-row"><span>Telefon</span><a href="tel:+48XXXXXXXXX">+48 XXX XXX XXX</a></div>
+        <div class="contact-row"><span>Obszar działania</span><span>woj. świętokrzyskie</span></div>
+      </div>
+    </div>
+
+    <div class="contact-card">
+      <div class="eyebrow">Bezpłatna wycena</div>
+      <p style="font-size: 0.86rem; color: var(--muted); margin: 14px 0 22px;">Wypełnij formularz — oddzwaniam lub odpisuję w ciągu 24h, bez żadnych zobowiązań.</p>
+      <form>
+        <div class="field">
+          <label for="name">Imię i nazwisko firmy</label>
+          <input type="text" id="name" name="name" placeholder="np. Salon Fryzjerski Anna Kowalska">
+        </div>
+        <div class="field">
+          <label for="email">Twój email</label>
+          <input type="email" id="email" name="email" placeholder="kontakt@twojafirma.pl">
+        </div>
+        <div class="field">
+          <label for="message">Czego potrzebujesz</label>
+          <textarea id="message" name="message" placeholder="Krótko o Twojej firmie i co ma się znaleźć na stronie"></textarea>
+        </div>
+        <button type="submit" class="submit-btn">Wyślij zapytanie — bez zobowiązań</button>
+      </form>
+    </div>
+  </div>
+</section>
+
+<footer>
+  <div class="wrap">
+    <span>© 2026 Mateusz [Nazwisko]. Strony internetowe — woj. świętokrzyskie.</span>
+    <span class="mono">Kielce · Jędrzejów · Bilcza</span>
+  </div>
+</footer>
+
+<script>
+  const revealEls = document.querySelectorAll('.reveal');
+  const observer = new IntersectionObserver((entries) => {
+    entries.forEach(entry => {
+      if (entry.isIntersecting) {
+        entry.target.classList.add('in');
+        observer.unobserve(entry.target);
+      }
+    });
+  }, { threshold: 0.1 });
+  revealEls.forEach(el => observer.observe(el));
+</script>
+
+</body>
+</html>
